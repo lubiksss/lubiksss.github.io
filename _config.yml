@@ -24,10 +24,10 @@ description              : ""
 url                      : "https://lubiksss.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "lubiksss/lubiksss.github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : #"/assets/images/cube_free.jpg"
 logo                     : "/assets/images/cube_free.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs            : true
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -103,8 +103,8 @@ analytics:
 author:
   name             : "JAEDEOK JO"
   avatar           : "/assets/images/cube_free.jpg"
-  bio              : "Learning Computer Science and Engineering"
-  location         : "Seoul, Republic of Korea"
+  bio              : "안녕하세요."
+  location         : "Seoul, Korea"
   email            : "lubiksss@gmail.com"
   github          : "lubiksss"
   links:
@@ -138,7 +138,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/lubiksss"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -192,7 +192,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 markdown: kramdown
 highlighter: rouge
 lsi: false
-excerpt_separator: "\n\n"
+excerpt_separator: ""
 incremental: false
 
 
@@ -285,6 +285,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: false
+      show_date: true
       comments: # true
       share: false
       related: true
