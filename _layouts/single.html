@@ -29,7 +29,10 @@ excerpt: ""
         <header>
           {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
           {% include page__meta.html %}
-
+          <div class="page__meta" style="margin-top: 0;">
+            {% include page__taxonomy.html %}
+          </div>
+          <hr style="border: double;">
         </header>
       {% endunless %}
 
@@ -45,14 +48,6 @@ excerpt: ""
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
-
-      <footer class="page__meta">
-        {% if site.data.ui-text[site.locale].meta_label %}
-          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
-        {% endif %}
-        {% include page__taxonomy.html %}
-        {% include page__date.html %}
-      </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}
 

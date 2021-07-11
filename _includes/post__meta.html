@@ -5,12 +5,12 @@
     <!-- 업데이트 날짜도 표시하게함.-->
     <span class="page__meta-date">
       {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-      {% if page.last_modified_at %}
+      {% if post.last_modified_at %}
         <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i>Updated by
-        <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: date_format }}&nbsp&nbsp&nbsp</time>
-      {% elsif page.date %}
+        <time datetime="{{ post.last_modified_at | date: "%Y-%m-%d" }}">{{ post.last_modified_at | date: date_format }}&nbsp&nbsp&nbsp</time>
+      {% elsif post.date %}
         <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i>Updated by
-        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: date_format }}&nbsp&nbsp&nbsp</time>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}&nbsp&nbsp&nbsp</time>
       {% endif %}
     </span>
 
