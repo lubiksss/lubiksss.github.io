@@ -1,7 +1,7 @@
 main:
   - title: "Home"
     url: /index.html
-  - title: "Category"
+  - title: "Tags"
+    url: /tags/
+  - title: "Categories"
     url: /categories/
-  - title: "About"
-    url: /about/
