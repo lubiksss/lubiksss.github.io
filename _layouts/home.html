@@ -19,7 +19,9 @@ layout: archive
 <div class="entries-{{ entries_layout }}">
   {% for post in posts %}
     {% include archive-single.html type=entries_layout %}
+    <hr>
   {% endfor %}
+
 </div>
 
 {% include paginator.html %}
