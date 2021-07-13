@@ -31,8 +31,10 @@ excerpt: ""
           {% include page__meta.html %}
           <div class="page__meta" style="margin-top: 0; margin-bottom: 0.7em;">
             {% include page__taxonomy.html %}
+            <!-- 머리말이랑 구분하려고 줄 한개 그었는데 뭔가 위에 테마가 적용이 안됨 그냥 컬러그레이로설정.
+          나중에 테마 변경시 호환안됨 무조건 그레이로 남아있음.-->
+            <hr style="border: solid; color:gray">
           </div>
-          <hr style="border: solid;">
         </header>
       {% endunless %}
 
