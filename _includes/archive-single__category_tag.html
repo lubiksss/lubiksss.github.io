@@ -24,16 +24,16 @@
 <div class="{{ include.type | default: 'list' }}__item">
   <article class="archive__item">
 
-    <span class="archive__item-title" style = "margin-bottom:0; margin-top:0">
+    <span class="archive__item-title">
       <strong>
-        <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+        <a href="{{ post.url | relative_url }}" style = 'color:#3E7B84'rel="permalink">{{ title }}</a>
       </strong>
     </span>
 
     <span class="page__meta">
 
       <!-- 업데이트 날짜랑 포스트 날짜랑다르면 업데이트 날짜를 표시하게함.-->
-      <span class="page__meta-date" style = "margin-bottom:0; margin-top:0">
+      <span class="page__meta-date"">
         {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
         {% assign date = document.date %}
 
@@ -46,17 +46,17 @@
         {% endcapture %}
 
         {% if modified !=  posted %}
-        <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i>Updated by
+        <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i>
         <time datetime="{{ post.last_modified_at | date: "%Y-%m-%d" }}">{{ post.last_modified_at | date: date_format }}</time>
 
         <!-- 포스팅 날짜 -->
         {% else %}
         {% if document.show_date and document.date %}
         {% assign date = document.date %}
-        <span class="page__meta-date" style = "margin-bottom:0; margin-top:0">
+        <span class="page__meta-date">
           <i class="far {% if include.type == 'grid' and document.read_time and document.show_date %}fa-fw {% endif %}fa-calendar-alt" aria-hidden="true"></i>
           {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-          <time datetime="{{ date | date_to_xmlschema }}">Posted by {{ date | date: date_format }}</time>
+          <time datetime="{{ date | date_to_xmlschema }}">{{ date | date: date_format }}</time>
         </span>
         {% endif %}
         {% endif %}
@@ -67,7 +67,7 @@
         <i class="fas fa-fw fa-folder-open" aria-hidden="true"></i>
         <span itemprop="keywords">
           {% for category_word in post.categories %}
-          <a href="{{ category_word | slugify | prepend: path_type | prepend: site.category_archive.path | relative_url }}" class="page__taxonomy-item" style = "margin-bottom:0; margin-top:0" rel="tag">{{ category_word }}</a>
+          <a href="{{ category_word | slugify | prepend: path_type | prepend: site.category_archive.path | relative_url }}" class="page__taxonomy-item-category" style = "margin-bottom:0; margin-top:0" rel="tag">{{ category_word }}</a>
           {% endfor %}
         </span>
       </span>
