@@ -17,7 +17,7 @@
       {% assign date = document.date %}
 
       {% capture modified %}
-      {{ page.last_modified_at | date: date_format }}
+      {{ post.last_modified_at | date: date_format }}
       {% endcapture %}
 
       {% capture posted %}
@@ -26,7 +26,7 @@
 
       {% if modified !=  posted %}
         <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i>Updated by
-        <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: date_format }}</time>
+        <time datetime="{{ post.last_modified_at | date: "%Y-%m-%d" }}">{{ post.last_modified_at | date: date_format }}</time>
       {% else %}
         <!-- 포스팅 날짜 -->
         {% if document.show_date and document.date %}
@@ -44,7 +44,7 @@
     <span>
       <i class="fas fa-fw fa-folder-open" aria-hidden="true"></i>
       <span itemprop="keywords">
-      {% for category_word in page.categories %}
+      {% for category_word in post.categories %}
         <a href="{{ category_word | slugify | prepend: path_type | prepend: site.category_archive.path | relative_url }}" class="page__taxonomy-item" rel="tag">{{ category_word }}</a>
       {% endfor %}
       </span>
@@ -54,7 +54,7 @@
     <span>
       <i class="fas fa-fw fa-tags" aria-hidden="true"></i>
       <span itemprop="keywords">
-      {% for tag_word in page.tags %}
+      {% for tag_word in post.tags %}
         <a href="{{ tag_word | slugify | prepend: path_type | prepend: site.tag_archive.path | relative_url }}" class="page__taxonomy-item" rel="tag">{{ tag_word }}</a>
       {% endfor %}
       </span>

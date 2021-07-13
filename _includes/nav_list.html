@@ -1,0 +1,10 @@
+{% assign sum = site.posts | size %}
+<li>
+  📂 전체 글 수 {{sum}}개
+</li>
+
+{% for category in site.categories %}
+  <div class="author__content">
+    <a href="/categories/{{category[0]}}">{{category[0]}}({{category[1].size}})</a>
+  </div>
+{% endfor %}

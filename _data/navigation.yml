@@ -1,7 +1,5 @@
 main:
   - title: "Home"
     url: /index.html
-  - title: "Tags"
-    url: /tags/
   - title: "Categories"
     url: /categories/

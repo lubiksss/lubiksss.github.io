@@ -1,13 +1,18 @@
 ---
 layout: archive
 ---
+<a href="/categories/blog/">blog</a>
+<a href="/categories/test/">test</a>
+
 
 {{ content }}
 
 <!--
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Home" }}</h3>
 -->
-<h3 class="archive__subtitle">Recent Posts</h3>
+<h1 style = margin-top:0;>Recent Posts</h1>
+<hr style="border: solid; color:gray;">
+
 {% if paginator %}
   {% assign posts = paginator.posts %}
 {% else %}
@@ -18,7 +23,7 @@ layout: archive
 
 <div class="entries-{{ entries_layout }}">
   {% for post in posts %}
-    {% include archive-single.html type=entries_layout %}
+    {% include archive-single__category_tag.html type=entries_layout %}
     <hr>
   {% endfor %}
 

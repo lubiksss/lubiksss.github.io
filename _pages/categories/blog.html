@@ -1,0 +1,14 @@
+---
+title: "Blog"
+layout: archive
+permalink: categories/blog
+author_profile: true
+sidebar_main: true
+---
+<hr style="border: solid; color:gray;">
+
+{% assign posts = site.categories.blog%}
+  {% for post in posts %}
+    {% include archive-single__category_tag.html type=page.entries_layout %}
+    <hr>
+  {% endfor %}
