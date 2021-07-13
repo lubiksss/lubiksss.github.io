@@ -29,8 +29,6 @@ excerpt: ""
         <header>
           {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
           {% include page__meta.html %}
-            <!-- 머리말이랑 구분하려고 줄 한개 그었는데 뭔가 위에 테마가 적용이 안됨 그냥 컬러그레이로설정.
-          나중에 테마 변경시 호환안됨 무조건 그레이로 남아있음.-->
           <hr style="border: solid; color:gray;">
         </header>
 
@@ -51,6 +49,7 @@ excerpt: ""
 
       {% if page.share %}{% include social-share.html %}{% endif %}
 
+      <hr style="border: solid; color:gray;">
       {% include post_pagination.html %}
     </div>
 
@@ -58,29 +57,3 @@ excerpt: ""
       {% include comments.html %}
     {% endif %}
   </article>
-
-  {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
-  {% if page.id and page.related and site.related_posts.size > 0 %}
-    <div class="page__related">
-      <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
-      <div class="grid__wrapper">
-        {% for post in site.related_posts limit:4 %}
-          {% include archive-single__page.html type="grid" %}
-        {% endfor %}
-      </div>
-    </div>
-  {% comment %}<!-- otherwise show recent posts if no related when `related: true` -->{% endcomment %}
-  {% elsif page.id and page.related %}
-    <div class="page__related">
-      <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
-      <div class="grid__wrapper">
-        {% for post in site.posts limit:4 %}
-          {% if post.id == page.id %}
-            {% continue %}
-          {% endif %}
-          {% include archive-single__page.html type="grid" %}
-        {% endfor %}
-      </div>
-    </div>
-  {% endif %}
-</div>
