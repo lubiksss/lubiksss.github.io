@@ -1,5 +1,6 @@
 ---
 last_modified_at : 2021-07-14
+layout : single
 title:  "Github README.md에 Latex수식 넣기"
 categories: github
 tags : [latex, markdown]
