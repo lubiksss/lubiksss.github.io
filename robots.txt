@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://lubiksss.github.io/sitemap.xml
