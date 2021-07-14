@@ -4,6 +4,7 @@ title:  "Github README.md에 Latex수식 넣기"
 categories: github
 tags : [latex, markdown]
 ---
+markdown 렌더링시 mathjax를 사용할 수 있는 경우는 mathjax를 사용하여 수식을 작성할 수 있지만 github의 README.md는 mathjax를 사용하지 않습니다. 따라서 아래와 같은 방법으로 이미지 형태의 수식을 넣어줄 수 있습니다.  
 <a href='http://www.codecogs.com/latex/eqneditor.php'>http://www.codecogs.com/latex/eqneditor.php</a>  
 위 페이지에 접속해서 latex 수식을 적고 페이지 제일 아래 항목을 URL encoded로 복사합니다.
 ```markdown
@@ -26,4 +27,4 @@ c = \sum_{(A_i^I,v_i^I)\in I}v_i^I -  \sum_{(A_j^O,v_j^O)\in O}v_j^O
 
 ![equation](https://latex.codecogs.com/gif.latex?%5Cbg_gray%20%5Chuge%20c%20%3D%20%5Csum_%7B%28A_i%5EI%2Cv_i%5EI%29%5Cin%20I%7Dv_i%5EI%20-%20%5Csum_%7B%28A_j%5EO%2Cv_j%5EO%29%5Cin%20O%7Dv_j%5EO)
 
-투명 배경일 때 글씨색을 하얀색으로 제공해주질 않아서 블랙모드에서는 가독성이 떨어져서 못 쓸 것 같습니다.
+투명 배경일 때 글씨색을 하얀색으로 제공해주지 않아서 블랙모드에서는 가독성이 떨어져서 못 쓸 것 같습니다.
