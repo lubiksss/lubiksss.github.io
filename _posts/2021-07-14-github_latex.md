@@ -27,6 +27,6 @@ c = \sum_{(A_i^I,v_i^I)\in I}v_i^I -  \sum_{(A_j^O,v_j^O)\in O}v_j^O
 
 ![equation](https://latex.codecogs.com/gif.latex?%5Cbg_gray%20%5Chuge%20c%20%3D%20%5Csum_%7B%28A_i%5EI%2Cv_i%5EI%29%5Cin%20I%7Dv_i%5EI%20-%20%5Csum_%7B%28A_j%5EO%2Cv_j%5EO%29%5Cin%20O%7Dv_j%5EO){: .center}
 
-투명 배경일 때 글씨색을 하얀색으로 제공해주지 않아서 블랙모드에서는 가독성이 떨어져서 못 쓸 것 같습니다.  
+투명 배경일 때 글씨색을 하얀색으로 제공해주지 않아서 블랙모드에서는 가독성이 떨어져서 못 쓰고 배경을 검은색으로 하면 잘 보입니다.  
 github 이미지 업로드 관련 다른게 궁금하시면 아래 블로그 참고하시면 됩니다.
 <a href = 'https://blog.yena.io/studynote/2017/11/23/Github-resize-image.html'>https://blog.yena.io/studynote/2017/11/23/Github-resize-image.html<a>
