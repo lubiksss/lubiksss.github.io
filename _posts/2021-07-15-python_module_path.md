@@ -40,7 +40,8 @@ ModuleNotFoundError: No module named 'activation_function'
 ```
 이유는 파이썬 코드가 실행될 때 module을 import 하는 경로를 system path와 현재 폴더 내로 설정하기 때문입니다. 따라서 아래와 같이 코드를 수정하여 system path에 상위 폴더를 추가해주게 되면 제대로 import 되게 됩니다.
 ```python
-import sys,os
+import sys
+import os
 sys.path.append(os.pardir)
 import lib.activation_function
 ```
