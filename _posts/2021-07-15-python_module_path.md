@@ -1,9 +1,9 @@
 ---
 last_modified_at : 2021-07-15
 layout : single
-title:  "python import module 경로(system path) 확인하기"
+title:  "python import 경로(system path) 확인하기"
 categories: python
-tags : [python, import module, system path]
+tags : [import, module, system path]
 
 toc: true
 toc_sticky: true
