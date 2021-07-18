@@ -3,7 +3,7 @@
   📂 전체 글 수 {{sum}}개
 </li>
 
-{% for category in site.categories %}
+{% for category in site.categories reversed%}
   <div class="author__content" style='margin:0.2em 0'>
     <a href="/categories/{{category[0]}}">{{category[0]}}({{category[1].size}})</a>
   </div>
