@@ -78,7 +78,7 @@ def upper_bound(start, end, target):
 def cal_max(start, end):
     tmp = -1
     while start <= end:
-        mid= (start+end)//2
+        mid = (start+end)//2
         if function(mid):
             tmp = mid
             start = mid+1
