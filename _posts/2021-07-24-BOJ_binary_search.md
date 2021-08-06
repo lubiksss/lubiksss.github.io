@@ -3,7 +3,7 @@ last_modified_at : 2021-07-24
 layout : single
 title:  "백준 이분 탐색"
 categories: BOJ
-tags : [python, 1920번, 10816번, 1654번, 2805번, 2110번, 이분 탐색]
+tags : [python, 이분 탐색, binary search]
 
 toc: true
 toc_sticky: true
