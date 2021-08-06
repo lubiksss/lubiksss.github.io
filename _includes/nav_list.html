@@ -3,8 +3,21 @@
   📂 전체 글 수 {{sum}}개
 </li>
 
+
+<!-- 카테고리를 카테고리 내 갯수별로 정렬-->
+{% assign categories_max = 0 %}
+{% for category in site.categories %}
+{% if category[1].size > categories_max %}
+{% assign categories_max = category[1].size %}
+{% endif %}
+{% endfor %}
+
+{% for i in (1..categories_max) reversed %}
 {% for category in site.categories reversed%}
-  <div class="author__content" style='margin:0.2em 0'>
-    <a href="/categories/{{category[0]}}">{{category[0]}}({{category[1].size}})</a>
-  </div>
+{% if category[1].size == i %}
+<div class="author__content" style='margin:0.2em 0'>
+  <a href="/categories/{{category[0]}}">{{category[0]}}({{category[1].size}})</a>
+</div>
+{% endif %}
+{% endfor %}
 {% endfor %}
