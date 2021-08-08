@@ -8,10 +8,11 @@ tags : [머신러닝, machine learning]
 toc: true
 toc_sticky: true
 ---
+
+## 서론
 ### *참고
 <a href='https://opentutorials.org/module/4916'>Opentutorials: Machine learning 1</a>  
 
-## 서론
 머신러닝으로 프로젝트를 하고 있어서 조금 정리해볼 생각입니다.
 
 ## 머신러닝의 종류
