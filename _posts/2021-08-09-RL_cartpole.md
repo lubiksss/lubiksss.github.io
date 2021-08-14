@@ -17,7 +17,7 @@ toc_sticky: true
 </ul>
 간단한 DQN모델을 통해서 CartPole게임을 pytorch를 통해 구현했습니다. 바로 아래 학습 결과를 CartPole이 쓰러지지 않고 버티는걸 볼 수 있습니다.  
 
-DQN을 구현하는데 환경은 gym을 통해서 얻었고, NN에는 Bellman Equation, Replay Buffer, Double Deep Q Learning 개념이 사용되었습니다. 위의 참고자료를 읽어보시면 자세하게 알 수 있습니다. 저는 구현하는 게 목적이었기 때문에 이론적인 접근보다는 그 개념이 코드를 통해서 어떻게 기록해놓도록 하겠습니다.
+DQN을 구현하는데 환경은 gym을 통해서 얻었고, NN에는 Bellman Equation, Replay Buffer, Double Deep Q Learning 개념이 사용되었습니다. 위의 참고자료를 읽어보시면 자세하게 알 수 있습니다. 저는 구현하는 게 목적이었기 때문에 이론적인 접근보다는 그 개념이 코드를 통해서 어떻게 구현되는지 기록해놓도록 하겠습니다.
 ## 학습 결과
 <div style = 'column-count :2;'>
 <p>학습 전</p>
