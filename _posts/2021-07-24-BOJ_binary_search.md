@@ -102,7 +102,7 @@ def lower_bound(start, end, target):
             start = mid+1
     return end
 
-def lower_bound(start, end, target):
+def upper_bound(start, end, target):
     while start < end:
         mid = (start+end)//2
         if data[mid] > target:
