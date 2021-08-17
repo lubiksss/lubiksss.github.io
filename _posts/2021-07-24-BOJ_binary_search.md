@@ -115,10 +115,10 @@ def upper_bound(start, end, target):
             start = mid+1
     return end
 
-# 예를들어 data = [1,1,1,1,2] 이고 target = 1일때
+# 예를 들어 data = [1,1,1,1,2] 이고 target = 1일때
 # lower_bound는 0을 리턴
 # upper_bound는 4를 리턴
 ```
-위 코드에서 end값은 제가 짠 코드와 다르게 인덱스의 end보다 1 큰 값입니다.(len(data))
+위 코드에서 함수의 입력 end값은 제가 짠 코드와 다르게 인덱스의 end보다 1 큰 값입니다.(end = len(data))
 
 
