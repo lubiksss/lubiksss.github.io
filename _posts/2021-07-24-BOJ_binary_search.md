@@ -93,6 +93,8 @@ def cal_max(start, end):
 ### *추가
 인터넷에 깔끔한 lower, upper bound 코드가 직관적으로 이해가 안 돼서 tmp를 사용한 코드를 사용했는데 나중에 다른 문제들을 풀다 보니 위의 코드는 해당하는 값이 없으면 == 조건에 들어가지 못하고 tmp값을 변경하지 못하고 리턴 하는 값도 엉뚱한 값인 문제가 있었습니다. 따라서 문제의 조건에 해당하는 값이 반드시 있다고 주어지지 않으면 아래와 같은 코드를 사용해야 합니다.
 ```python
+# lower_bound는 target과 처음으로 같거나 처음으로 큰 수가 나오는 인덱스를 리턴
+# 없다면 list의 마지막 인덱스+1을 리턴
 def lower_bound(start, end, target):
     while start < end:
         mid = (start+end)//2
@@ -102,7 +104,9 @@ def lower_bound(start, end, target):
             start = mid+1
     return end
 
-def lower_bound(start, end, target):
+# upper_bound는 target보다 처음으로 큰 수가 나오는 인덱스를 리턴
+# 없다면 list의 마지막 인덱스+1을 리턴
+def upper_bound(start, end, target):
     while start < end:
         mid = (start+end)//2
         if data[mid] > target:
@@ -110,7 +114,11 @@ def lower_bound(start, end, target):
         else:
             start = mid+1
     return end
+
+# 예를 들어 data = [1,1,1,1,2] 이고 target = 1일때
+# lower_bound는 0을 리턴
+# upper_bound는 4를 리턴
 ```
-위 코드에서 end값은 제가 짠 코드와 다르게 인덱스의 end보다 1 큰 값입니다.(len(data))
+위 코드에서 함수의 입력 end값은 제가 짠 코드와 다르게 인덱스의 end보다 1 큰 값입니다.(end = len(data))
 
 
