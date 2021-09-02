@@ -11,7 +11,7 @@ sidebar_main: true
   {% assign posts = site.categories.github%}
   {% assign sorted_posts = posts | sort:"last_modified_at" | reverse%}
   {% for post in sorted_posts %}
-    {% include archive-single__category_tag.html type=page.entries_layout %}
-    <hr style = 'margin: 0.15em 0;'>
+  {% include archive-single__category_tag.html type=page.entries_layout %}
+  <hr style='margin: 0.15em 0;'>
   {% endfor %}
 </div>
