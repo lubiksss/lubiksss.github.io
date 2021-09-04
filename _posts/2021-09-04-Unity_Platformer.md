@@ -10,7 +10,7 @@ toc_sticky: true
 ---
 ## 서론
 ### *참고
-<a href='https://www.youtube.com/watch?v=v_Y5FH_tCpc&list=PLO-mt5Iu5TeZGR_y6mHmTWyo0RyGgO0N_'>2D 플랫포머 - 프로젝트 준비하기 [유니티 기초 강좌 B13 + 에셋 다운로드]</a>
+<a href='https://www.youtube.com/watch?v=v_Y5FH_tCpc&list=PLO-mt5Iu5TeZGR_y6mHmTWyo0RyGgO0N_'>2D 플랫포머 - 프로젝트 준비하기 [유니티 기초 강좌 B13 + 에셋 다운로드]</a>  
 <a href='https://github.com/lubiksss/Platformer'>github_백업용</a>
 
 Unity로 만든 2D 플랫포머 게임입니다. 이번에는 BOLT를 사용하지 않았으며 C# Scripting으로만 구현했습니다.  
