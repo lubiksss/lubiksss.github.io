@@ -20,8 +20,10 @@ Unity로 만든 2D 플랫포머 게임입니다. 이번에는 BOLT를 사용하�
 이번에는 BOLT를 사용하지 않았기 때문에 C#스크립트가 그대로 구현되어 있는데 다음에 사용할 때 쉽게 참고할 수 있겠습니다.
 
 ## Platformer
-![normal](./images/test.JPG)
-![collide](./images/collide.JPG)
+<img src = 'https://user-images.githubusercontent.com/67966414/132086940-c66022be-4aee-4e58-9cdf-643cf92c2fe3.JPG' alt = 'normal' style="margin-left: auto; margin-right: auto; display: block;">
+<br>
+<img src = 'https://user-images.githubusercontent.com/67966414/132086948-3bbccca9-5e29-415a-b653-f284e99f4450.JPG' alt = 'normal' style="margin-left: auto; margin-right: auto; display: block;">
+<br>
 
 ## 생각
 처음에 Unity를 공부할 때 자료를 볼트로 시작해서 C#스크립트를 작성하지 않는 것에 대한 찝찝함이 있었는데 이번 프로젝트를 하면서 사실상 BOLT에서 배운 모든 기능을 C#으로 구현할 수 있게 되었습니다. 딱 하나 객체의 State를 이동하는 부분을 C#으로 배우지 않았는데 이 부분만 해결하면 BOLT와 C#을 동시에 사용할 수 있게 될 거 같습니다. 다음에 또 공부하면서 C#으로 State 관련 개념을 구현하게 되면 적도록 하겠습니다.
