@@ -1,3 +1,14 @@
+---
+last_modified_at : 2021-09-21
+layout : single
+title:  "Unity ShootingGame"
+categories: Unity
+tags : [C#, ShootingGame]
+
+toc: true
+toc_sticky: true
+---
+
 ## *참고
 <a href='https://www.youtube.com/watch?v=ETYzjbnLixY&list=PLO-mt5Iu5TeYtWvM9eN-xnwRbyUAMWd3b&index=1'>2D 종스크롤 슈팅 - 플레이어 이동 구현하기 [유니티 기초 강좌 B27 + 에셋 다운로드]</a>  
 <a href='https://github.com/lubiksss/ShootingGame'>github_백업용</a>
