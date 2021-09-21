@@ -39,7 +39,7 @@ Unity로 Shooting Game을 만들었습니다. 튜토리얼을 거쳐서 이번�
 <br>
 이런 컴포넌트를 PlayerAction이라는 스크립트에서 컨트롤하기 위해서는 아래와 같이 쓸 수 있습니다. Animator 타입의 변수를 설정하고, 그 변수를 Awake라는 Unity 함수에서 초기화 한 뒤 일반 변수 사용하듯이 사용할 수 있습니다. 이렇게 하면 객체의 스크립트 컴포넌트에서 모든 컴포넌트를 사용할 수 있게 해줍니다.
 
-```C#
+```cs
 // Player Script
 public Animator animator;
 void Awake()
@@ -51,7 +51,7 @@ animator.SetInteger("isLR", (int)h);
 
 ### 객체에서 다른 객체를 제어
 게임을 만들 때 객체는 Player만 있는 것이 아니기 때문에 모든 객체는 다른 객체를 제어할 수 있어야 합니다. 예를 들어 GameManager라는 객체는 Player를 부활시키기 위해 Player라는 객체를 제어해야 하는데 이 부분은 Unity Editor를 아래와 같이 사용합니다. 우선 GameManager 스크립트 안에서 player라는 GameObject변수를 public으로 선언하고 Editor를 통해서 그 변수에 Player 객체를 넣어주어야 합니다.
-```C#
+```cs
 // GameManager Script
 public GameObject player;
 
