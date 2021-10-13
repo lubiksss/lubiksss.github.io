@@ -13,3 +13,6 @@ toc_sticky: true
 
 ## Computer Science
 1. <a href='https://gmlwjd9405.github.io/tags.html#%EB%A9%B4%EC%A0%91'>자료구조, 데이터베이스, 운영체제, 알고리즘</a>
+
+## OS
+1. <a href='https://iamnotokay.tistory.com/57'>변수 저장 위치</a>
