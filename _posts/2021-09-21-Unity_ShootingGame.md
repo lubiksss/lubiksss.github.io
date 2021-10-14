@@ -17,17 +17,18 @@ Unity로 Shooting Game을 만들었습니다. 튜토리얼을 거쳐서 이번�
 
 ## Preview
 <div>
-    <img src="https://user-images.githubusercontent.com/67966414/134112841-efaa7add-e09b-48a3-94ee-62b45b7035f9.JPG" alt="1" style="width:24%;"/>
-    <img src="https://user-images.githubusercontent.com/67966414/134112859-71a74288-854f-4661-bc1e-f28719c68b27.JPG" alt="2" style="width:24%;"/>
-    <img src="https://user-images.githubusercontent.com/67966414/134112866-d5385e1b-ae90-4121-8888-b6660e6b3b4b.JPG" alt="3" style="width:24%;"/>
-    <img src="https://user-images.githubusercontent.com/67966414/134112867-86ce904e-c941-420b-93fc-f4d633e13cc3.JPG" alt="4" style="width:24%;"/>
+    <img src="https://user-images.githubusercontent.com/67966414/137348947-b342bf9c-f3a4-43b3-8a1a-f8c0c11788dc.jpg" alt="1" style="width:24%;"/>
+    <img src="https://user-images.githubusercontent.com/67966414/137348954-27063584-ce64-4c85-855b-4740622f4128.jpg" alt="2" style="width:24%;"/>
+    <img src="https://user-images.githubusercontent.com/67966414/137348955-6dbdc93b-a1ef-4cfa-a07b-e42304c37c73.jpg" alt="3" style="width:24%;"/>
+    <img src="https://user-images.githubusercontent.com/67966414/137348958-cc15c754-1df0-4f04-93e6-390c6ea2090a.jpg" alt="4" style="width:24%;"/>
 </div>
 <div>
-    <img src="https://user-images.githubusercontent.com/67966414/134112869-24a13762-3d31-486c-8f0e-9e11587e0ea4.JPG" alt="Boss1" style="width:24%;"/>
-    <img src="https://user-images.githubusercontent.com/67966414/134112870-e127eb78-8cec-4110-8497-2782c5f4c264.JPG" alt="Boss2" style="width:24%;"/>
-    <img src="https://user-images.githubusercontent.com/67966414/134112872-6b95be35-ff90-43ec-a73a-80d064939661.JPG" alt="Boss3" style="width:24%;"/>
-    <img src="https://user-images.githubusercontent.com/67966414/134112874-f6afc46a-6673-4185-8f3d-c1a75a0fcb0e.JPG" alt="Boss4" style="width:24%;"/>
+    <img src="https://user-images.githubusercontent.com/67966414/137348963-348aaa7f-4be9-4b00-80e5-9c65433e748c.jpg" alt="Boss1" style="width:24%;"/>
+    <img src="https://user-images.githubusercontent.com/67966414/137348965-ea445288-df5d-4368-bc2a-657b6141f7b7.jpg" alt="Boss2" style="width:24%;"/>
+    <img src="https://user-images.githubusercontent.com/67966414/137348968-ebee1cad-ef5b-48c7-bb79-0baf33b3332f.jpg" alt="Boss3" style="width:24%;"/>
+    <img src="https://user-images.githubusercontent.com/67966414/137348970-0652d247-eef4-4a8e-a466-a1e75f360c4e.jpg" alt="Boss4" style="width:24%;"/>
 </div>
+
 
 ## Unity 기본
 ### 객체의 컴포넌트 제어
