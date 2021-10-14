@@ -1,7 +1,7 @@
 ---
 last_modified_at : 2021-10-13
 layout : single
-title:  "스위핑 알고리즘"
+title:  "백준 스위핑 알고리즘"
 categories: BOJ
 tags : [python, 스위핑, sweeping]
 
