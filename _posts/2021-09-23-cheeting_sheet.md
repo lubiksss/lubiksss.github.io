@@ -16,3 +16,6 @@ toc_sticky: true
 
 ## OS
 1. <a href='https://iamnotokay.tistory.com/57'>변수 저장 위치</a>
+
+## HTML, CSS
+1. <a href='https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=shinekjm&logNo=221618781015'>CSS 다중 선택자 정리</a>
