@@ -33,7 +33,7 @@ paging system을 사용하면 프로세스에서 나눠진 page를 언제 물리
 가장 먼저 들어온 페이지를 내린다.
 2. OPT(OPTimal) 알고리즘  
 앞으로 가장 오랫동안 사용하지 않을 페이지를 내린다. => 그러나 미래에 어떤 페이지를 얼마나 사용할 것인지는 알 수 없으므로 일반 OS에서는 구현이불가능하다.
-3. LRU(Leaset Recently Used) 알고리즘
+3. LRU(Leaset Recently Used) 알고리즘  
 가장 오래전에 사용된 페이지를 내리자.
-4. LFU(Leaset Frequently Used) 알고리즘
+4. LFU(Leaset Frequently Used) 알고리즘  
 가장 적게 사용된 페이지를 내리자.
