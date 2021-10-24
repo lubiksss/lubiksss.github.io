@@ -26,52 +26,52 @@ toc_sticky: true
   <tbody>
     <tr>
         <td style="text-align: center">선택 정렬</td>
-        <td style="text-align: center"></td>
-        <td style="text-align: center"></td>
-        <td style="text-align: center"></td>
+        <td style="text-align: center">n^2</td>
+        <td style="text-align: center">제자리 정렬</td>
+        <td style="text-align: center">불안정</td>
         <td style="text-align: center"></td>
     </tr>
     <tr>
         <td style="text-align: center">삽입 정렬</td>
-        <td style="text-align: center"></td>
-        <td style="text-align: center"></td>
-        <td style="text-align: center"></td>
-        <td style="text-align: center"></td>
+        <td style="text-align: center">n^2</td>
+        <td style="text-align: center">제자리 정렬</td>
+        <td style="text-align: center">안정</td>
+        <td style="text-align: center">어느 정도 정렬된 상태에서 효율성 좋음</td>
     </tr>
     <tr>
         <td style="text-align: center">버블 정렬</td>
-        <td style="text-align: center"></td>
-        <td style="text-align: center"></td>
-        <td style="text-align: center"></td>
-        <td style="text-align: center"></td>
-    </tr>
-    <tr>
-        <td style="text-align: center">합병 정렬</td>
-        <td style="text-align: center"></td>
-        <td style="text-align: center"></td>
-        <td style="text-align: center"></td>
+        <td style="text-align: center">n^2</td>
+        <td style="text-align: center">제자리 정렬</td>
+        <td style="text-align: center">안정</td>
         <td style="text-align: center"></td>
     </tr>
     <tr>
         <td style="text-align: center">셸 정렬</td>
-        <td style="text-align: center"></td>
-        <td style="text-align: center"></td>
-        <td style="text-align: center"></td>
+        <td style="text-align: center">n^1.5</td>
+        <td style="text-align: center">제자리 정렬</td>
+        <td style="text-align: center">불안정</td>
+        <td style="text-align: center">삽입정렬은 발전시킨 정렬</td>
+    </tr>
+    <tr>
+        <td style="text-align: center">병합 정렬</td>
+        <td style="text-align: center">nlogn</td>
+        <td style="text-align: center">정렬된 리스트를 담을 공간이 필요 O(n)</td>
+        <td style="text-align: center">안정</td>
         <td style="text-align: center"></td>
     </tr>
     <tr>
         <td style="text-align: center">퀵 정렬</td>
-        <td style="text-align: center"></td>
-        <td style="text-align: center"></td>
-        <td style="text-align: center"></td>
-        <td style="text-align: center"></td>
+        <td style="text-align: center">nlogn</td>
+        <td style="text-align: center">제자리 정렬</td>
+        <td style="text-align: center">불안정</td>
+        <td style="text-align: center">nlogn 정렬 중 가장 빠름</td>
     </tr>
     <tr>
         <td style="text-align: center">힙 정렬</td>
-        <td style="text-align: center"></td>
-        <td style="text-align: center"></td>
-        <td style="text-align: center"></td>
-        <td style="text-align: center"></td>
+        <td style="text-align: center">nlogn</td>
+        <td style="text-align: center">정렬된 리스트를 담을 공간이 필요 O(n)</td>
+        <td style="text-align: center">불안정</td>
+        <td style="text-align: center">전체 정렬이 아니라 가장 큰 값 몇개만 필요할때 효율적</td>
     </tr>
 
   </tbody>
