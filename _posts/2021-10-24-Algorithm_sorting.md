@@ -13,7 +13,7 @@ toc_sticky: true
 <!-- <a target = '_blank' href=''></a>   -->
 
 ## summary
-<table>
+<table width = '100%'>
   <thead>
     <tr>
         <th style="text-align: center"><strong>구분</strong></th>
