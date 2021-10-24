@@ -238,8 +238,39 @@ def quick_sort(nlist, left, right):
     quick_sort(nlist, rstart+1, right)
     return nlist
 ```
-## 힙 정렬 (Heap)
+<!-- ## 힙 정렬 (Heap) -->
 
+## 테스트 결과
+```python
+nlist = random.sample(range(1, 1001), 1000)
+start = time.time()
+selection_sort(nlist)
+print(f'selection_sort\tn=1000\ttime: {time.time()-start:.5f}')
+nlist = random.sample(range(1, 10001), 10000)
+start = time.time()
+selection_sort(nlist)
+print(f'selection_sort\tn=10000\ttime: {time.time()-start:.5f}')
+```
+```cmd
+selection_sort  n=1000  time: 0.02601
+selection_sort  n=10000 time: 2.44855
+
+insertion_sort  n=1000  time: 0.05555
+insertion_sort  n=10000 time: 5.34221
+
+bubble_sort     n=1000  time: 0.06702
+bubble_sort     n=10000 time: 6.97594
+
+shell_sort      n=1000  time: 0.00400
+shell_sort      n=10000 time: 0.06703
+
+merge_sort      n=1000  time: 0.00400
+merge_sort      n=10000 time: 0.12603
+
+quick_sort      n=1000  time: 0.00200
+quick_sort      n=10000 time: 0.02400
+```
+리스트의 길이가 10배가 되었을때 n^2시간 복잡도인 정렬들은 시간이 약 100배가 되는 것을 확인할 수 있습니다. shell 정렬의 경우 n^1.5보다 성능이 좋게 나왔고 merge 정렬은 nlogn, quick정렬도 nlogn보다 성능이 좋게 나온것을 볼 수 있습니다.
 
 ## 생각
 제자리 정렬을 구현하기 위해선 신경을 좀 써야 합니다. 리스트 슬라이싱을 사용하면 훨씬 쉽게 풀 수 있지만 메모리가 복사되기 때문에 제자리 정렬이 아니게 됩니다.
