@@ -77,7 +77,7 @@ toc_sticky: true
   </tbody>
 </table>
 
-## 선택 정렬 (Selection Sort)
+## 선택 정렬 (Selection)
 ```python
 def swap(a, b):
     nlist[a], nlist[b] = nlist[b], nlist[a]
@@ -95,7 +95,7 @@ def selection_sort(nlist):
         swap(i, minidx)
     return nlist
 ```
-## 삽입 정렬 (Insertion) Sort)
+## 삽입 정렬 (Insertion)
 ```python
 def insertion_sort(nlist):
     # 두번째 원소부터 끝까지 돌면서
@@ -111,7 +111,7 @@ def insertion_sort(nlist):
                 break
     return nlist
 ```
-## 버블 정렬 (Bubble Sort)
+## 버블 정렬 (Bubble)
 ```python
 def bubble_sort(nlist):
     # 처음부터 끝까지 돌면서
@@ -123,7 +123,7 @@ def bubble_sort(nlist):
                 swap(j+1, j)
     return nlist
 ```
-## 셸 정렬 (Shell Sort)
+## 셸 정렬 (Shell)
 ```python
 def shell_insertion_sort(start, gap):
     # 시작+gap부터 원소부터 끝까지 돌면서
@@ -154,7 +154,7 @@ def shell_sort(nlist):
         gap = gap//2
     return nlist
 ```
-## 병합 정렬 (Merge Sort)
+## 병합 정렬 (Merge)
 ```python
 def merge(nlist, left, mid, right):
     sorted = [0]*len(nlist)
@@ -206,7 +206,7 @@ def merge_sort(nlist, left, right):
 
     return nlist
 ```
-## 퀵 정렬 (Quick Sort)
+## 퀵 정렬 (Quick)
 ```python
 def quick_sort(nlist, left, right):
     # 분할정복방법이니 탈출조건
@@ -238,7 +238,8 @@ def quick_sort(nlist, left, right):
     quick_sort(nlist, rstart+1, right)
     return nlist
 ```
-## 힙 정렬 (Heap Sort)
+## 힙 정렬 (Heap)
+
 
 ## 생각
 제자리 정렬을 구현하기 위해선 신경을 좀 써야 합니다. 리스트 슬라이싱을 사용하면 훨씬 쉽게 풀 수 있지만 메모리가 복사되기 때문에 제자리 정렬이 아니게 됩니다.
