@@ -71,8 +71,16 @@ toc_sticky: true
         <td style="text-align: center">nlogn</td>
         <td style="text-align: center">정렬된 리스트를 담을 공간이 필요 O(n)</td>
         <td style="text-align: center">불안정</td>
-        <td style="text-align: center">전체 정렬이 아니라 가장 큰 값 몇개만 필요할때 효율적</td>
+        <td style="text-align: center">가장 큰 값 몇개만 필요할때 효율적</td>
     </tr>
 
   </tbody>
 </table>
+
+## 선택 정렬 (Selection Sort)
+## 삽입 정렬 (Insertion) Sort)
+## 버블 정렬 (Bubble Sort)
+## 셸 정렬 (Shell Sort)
+## 병합 정렬 (Merge Sort)
+## 퀵 정렬 (Quick Sort)
+## 힙 정렬 (Heap Sort)
