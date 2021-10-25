@@ -1,7 +1,7 @@
 ---
 last_modified_at : 2021-10-25
 layout : single
-title:  "python 숫자 객체"
+title:  "python Interning"
 categories: python
 tags : [python, 소팅, sorting]
 
@@ -11,7 +11,7 @@ toc_sticky: true
 ## 서론
 ### 참조
 <a target = '_blank' href='https://tyanjournal.com/tips/python-int-type-%EB%B3%80%EC%88%98%EC%9D%98-identity-%EB%B0%8F-console%EA%B3%BC-script%EC%97%90%EC%84%9C%EC%9D%98-%EC%8B%A4%ED%96%89-%EA%B2%B0%EA%B3%BC/'>[Python] int type 변수의 identity 및 console과 script에서의 실행 결과</a>  
-<a target = '_blank' href='파이썬의 효과적인 메모리 재활용 방법 - Interning'>[Python] int type 변수의 identity 및 console과 script에서의 실행 결과</a>  
+<a target = '_blank' href='https://nephtyws.github.io/python/interning/'>파이썬의 효과적인 메모리 재활용 방법 - Interning</a>  
 
 기존에 공부할 때 파이썬에서는 자주 사용하는 숫자(-5~256)도 객체로 만들어 넣고 그 객체를 생성할 시 기존에 만들어져있던 reference를 리턴한다고 배웠습니다. 근데 이 실행 결과가 콘솔(interpreter)에서와 에디터(.py)에서가 다릅니다.
 
