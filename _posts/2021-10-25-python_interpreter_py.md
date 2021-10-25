@@ -13,7 +13,7 @@ toc_sticky: true
 <a target = '_blank' href='https://tyanjournal.com/tips/python-int-type-%EB%B3%80%EC%88%98%EC%9D%98-identity-%EB%B0%8F-console%EA%B3%BC-script%EC%97%90%EC%84%9C%EC%9D%98-%EC%8B%A4%ED%96%89-%EA%B2%B0%EA%B3%BC/'>[Python] int type 변수의 identity 및 console과 script에서의 실행 결과</a>  
 <a target = '_blank' href='https://nephtyws.github.io/python/interning/'>파이썬의 효과적인 메모리 재활용 방법 - Interning</a>  
 
-기존에 공부할 때 파이썬에서는 자주 사용하는 숫자(-5~256)도 객체로 만들어 넣고 그 객체를 생성할 시 기존에 만들어져있던 reference를 리턴한다고 배웠습니다. 근데 이 실행 결과가 콘솔(interpreter)에서와 에디터(.py)에서가 다릅니다.
+기존에 공부할 때 파이썬에서는 자주 사용하는 숫자도 객체로 만들어 넣고 그 객체를 생성할 시 기존에 만들어져있던 reference를 리턴한다고 배웠습니다. 바로 이것이 Interning개념이죠. 숫자 obj의 경우는 -5~256 문자 obj의 경우는 \[a-zA-z0-9_]에 해당하는 케이스는 이미 있는 obj를 사용합니다. 근데 이 실행 결과가 콘솔(interpreter)에서와 에디터(.py)에서가 다릅니다.
 
 ## 결과
 콘솔에서는 공부했던 거처럼 숫자 257부터는 서로 다른 객체를 생성하게 되어 257부터는 서로가 다른 객체를 가리키게 되어 a is b의 결과가 false가 나오는 것을 볼 수 있습니다.
@@ -53,4 +53,4 @@ True
 
 ## 생각
 그럼 이 결과가 어떻게 보면 python의 원리에 어긋나는 결과 같은데 컴파일러가 이렇게 맘대로 바꿔도 되는지 모르겠습니다. 일단 그렇다고 이해는 했는데 이 부분을 어떻게 해석해야 할까요.  
-참조링크에 설명이 쓰여 있긴 한데 그렇게 바꾼 합리적인 이유에 대해서는 쓰여 있진 않습니다.
+참조링크에 설명이 쓰여 있긴 한데 그렇게 바꾼 합리적인 이유에 대해서는 쓰여 있진 않습니다. Interning 개념에 더해서 컴파일 타임에 추가적인 재활용이 일어난다고만 쓰여있네요.
