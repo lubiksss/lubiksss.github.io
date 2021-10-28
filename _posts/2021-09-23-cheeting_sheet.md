@@ -19,7 +19,8 @@ toc_sticky: true
 1. <a href='https://iamnotokay.tistory.com/57' target = '_blank'>변수 저장 위치</a>
 
 ## Network
-1. <a href='https://noahlogs.tistory.com/47' target = '_blank'>[네트워크] 네트워크 기초 지식 정리</a>
+1. <a href='https://noahlogs.tistory.com/47' target = '_blank'>[네트워크] 네트워크 기초 지식 정리</a>  
+2. <a href='https://www.youtube.com/watch?v=6jo2OYPK7k0' target = '_blank'>네트워크 계층으로 알아보는 인터넷의 원리</a>
 
 ## HTML, CSS
 1. <a href='https://blog.naver.com/PostView.nhn?blogId=shinekjm&logNo=221618781015&parentCategoryNo=&categoryNo=12&viewDate=&isShowPopularPosts=true&from=search' target = '_blank'>CSS 다중 선택자 정리</a>
