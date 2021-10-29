@@ -25,7 +25,7 @@ toc_sticky: true
 4. Data 전송 절차의 Setup과 종료
 
 ## OSI 7 Layer
-<img src = 'https://user-images.githubusercontent.com/67966414/139423591-3b4ef903-ff52-4f2b-8258-9425fe152607.png' alt = '네트워크계층' style="margin-left: auto; margin-right: auto; display: block;"></br>
+<img src = 'https://user-images.githubusercontent.com/67966414/139423591-3b4ef903-ff52-4f2b-8258-9425fe152607.png' alt = '네트워크계층' style="margin-left: auto; margin-right: auto; display: block;">
 
 * Data가 전달되기 위한 과정을 계층화 => 모듈화
 * 복잡도를 줄이고, 모듈화를 통한 기술 발전, 호환성 가능, 상호 독립성을 가질 수 있음.
@@ -45,7 +45,7 @@ toc_sticky: true
 4. Network Access
 
 ## 캡슐화/디캡슐화
-<img src = 'https://user-images.githubusercontent.com/67966414/139423571-b7bce995-0731-4e96-8a1e-f90bfe7ca4c0.png' alt = '캡슐화' style="margin-left: auto; margin-right: auto; display: block;"></br>
+<img src = 'https://user-images.githubusercontent.com/67966414/139423571-b7bce995-0731-4e96-8a1e-f90bfe7ca4c0.png' alt = '캡슐화' style="margin-left: auto; margin-right: auto; display: block;">
 
 1. Application에서 만들어진 Data가 해당 Device에서 네트워크를 통해 전달되는 과정
 2. 각 계층에서 동작하는 protocol 별로 정보(헤더)가 추가되고, 벗겨지는 과정
@@ -87,5 +87,5 @@ toc_sticky: true
 * 호스트가 통신을 한다는 것은 각 계층에서의 헤더를 만드는 과정이다. 소스는 알 수 있지만 데스티네이션은 알 없으므로 destination IP는 DNS로, destination MAC은 Routing과 ARP로 알 수 있다.
 * Framce의 dMAC정보만 계속 바뀌면서 네트워킹이 된다. 학교 수업을 들으면서도 너무나도 궁금하고 교수님도 알려주지 않았던\.\.\.드디어 알았습니다\.\.
 
-<img src = 'https://user-images.githubusercontent.com/67966414/139431929-4a48e293-b66c-4ce4-a3e8-996f804761b5.PNG' alt = '네트워킹과정' style="margin-left: auto; margin-right: auto; display: block;"></br>
+<img src = 'https://user-images.githubusercontent.com/67966414/139431929-4a48e293-b66c-4ce4-a3e8-996f804761b5.PNG' alt = '네트워킹과정' style="margin-left: auto; margin-right: auto; display: block;">
 
