@@ -79,5 +79,3 @@ Networking 구성요소가 매우 많으므로 100% 자산 소유가 불가함
 1. Internet
 2. Intranet
 3. Extranet
-
-## 생각
