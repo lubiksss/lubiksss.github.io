@@ -19,6 +19,7 @@ toc_sticky: true
 * 통신에 참여하는 주체 간의 Data를 주고받는 과정을 정의한 규칙
 * 효율성, 호환성을 위해 정해 놓은 규칙으로 다수의 업체와 관련 제품군의 등장 및 이용 가능
 * 통신을 위해 사용하는 프로토콜이 엄청 많다. 통신하는 컴퓨터끼리는 같은 프로토콜들을 사용해야 통신할 수 있는데 이 사용하는 프로토콜들을 프로토콜 스택이라고 한다. 현재는 TCP/IP 프로토콜 스택이 가장 많이 사용된다.
+* 실제로 하는 것
 1. Data(Message)의 포맷과 구조화
 2. Network Device에서 어떻게 처리할 것인지에 대한 정보
 3. Device간의 Error 처리에 대한 방식
@@ -37,8 +38,7 @@ toc_sticky: true
 5. Network
 6. Data Link
 7. Physical
-
-## TCP/IP
+* TCP/IP
 1. Application
 2. Transport
 3. Network
@@ -52,7 +52,7 @@ toc_sticky: true
 3. 네트워킹한다는 의미의 기술적인 설명임
 
 ## 헤더
-* 각각의 헤더는 아래의 정보를 담고 있다.
+각각의 헤더는 아래의 정보를 담고 있다.
 1. Application
     * Encoded application data
 2. Transport
