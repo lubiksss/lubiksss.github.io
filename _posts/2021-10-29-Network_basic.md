@@ -2,7 +2,7 @@
 last_modified_at : 2021-10-29
 layout : single
 title:  "Network 기본"
-categories: Algorithm
+categories: Network
 tags : [Network, basic]
 
 toc: true
