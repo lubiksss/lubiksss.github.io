@@ -87,3 +87,5 @@ toc_sticky: true
 * 호스트가 통신을 한다는 것은 각 계층에서의 헤더를 만드는 과정이다. 소스는 알 수 있지만 데스티네이션은 알 없으므로 destination IP는 DNS로, destination MAC은 Routing과 ARP로 알 수 있다.
 * Framce의 dMAC정보만 계속 바뀌면서 네트워킹이 된다. 학교 수업을 들으면서도 너무나도 궁금하고 교수님도 알려주지 않았던\.\.\.드디어 알았습니다\.\.
 
+<img src = 'https://user-images.githubusercontent.com/67966414/139431929-4a48e293-b66c-4ce4-a3e8-996f804761b5.PNG' alt = '네트워킹과정' style="margin-left: auto; margin-right: auto; display: block;"></br>
+
