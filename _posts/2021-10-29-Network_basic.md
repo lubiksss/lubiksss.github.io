@@ -25,7 +25,8 @@ toc_sticky: true
     * End Device : PC, Server, SmartPhone, IoT기기 등
     * Networking Device : 전송 장비, Switch, AP, Router, L4/L7, Firewall, VPN
 2. Application
-3. Media
+3. Media(매체)
+    * 유/무선
 4. Protocol
     * 컴퓨터 네트워킹에서 가장 중요한 부분
     * 각각의 데이터를 전달되는 과정을 규칙으로 정해 놓은 것. 전 세계 표준이다.
@@ -47,7 +48,7 @@ toc_sticky: true
 5. Point to Point, Multi-Access (direct)
 6. Circuit Switching / Packet Switching (indirect)
     * A와 B가 통신할 때 A, B 사이의 Circuit이 점유된다 => Circuit Switching
-    * 데이터를 중심으로 A, B 사이의 Circuit을 보냄, 점유하지 않음
+    * 데이터를 중심으로 A, B 사이의 Circuit을 보냄, 점유하지 않음 => Packet Switching
 7. Network Topology
     * Bus, Start, Ring, Hierarchical, Mesh, Hub&Spoke
     * 네트워크가 연결된 방식을 말함
@@ -60,16 +61,23 @@ toc_sticky: true
     * Domain Name (편의로 만든 알파벳 주소, IP Address로 변환됨)
 3. 도로로 비유하자면 교차로에서 온 차를 열어보고 목적지를 확인해서 목적지로 보내거나 근처에 목적지가 없으면 목적지로 가기 위한 근처 교차로로 다시 보낸다.
 
+## 품질
+Infra로서의 특징 : 돈과의 Trade off  
+Networking 구성요소가 매우 많으므로 100% 자산 소유가 불가함
+1. Bandwidth
+    * bps(bit per second)
+2. Latency
+    * RTT(Round Trip Time)
+    * 패킷이 목적지에 도달하고 나서 해당 패킷에 대한 응답이 출발지로 다시 돌아오기까지의 시간. 즉, RTT는 패킷 왕복 시간입니다.
+3. Jitter
+    * Latency의 변동
+4. Loss
+    * 말 그대로 loss, 에러율
+    * 유선상에선 거의 발생하지 않음, 인터넷망이나 무선에서는 발생 가능
 
-
-
-
-
-
-
-
-
-
-
+## 망분류
+1. Internet
+2. Intranet
+3. Extranet
 
 ## 생각
