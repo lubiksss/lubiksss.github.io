@@ -49,7 +49,7 @@ buffer_limit = 50000
 ```
 ## Replay Buffer
 ```python
-# 강화학습은 Training data set이라는게 따로 없다. Agent가 행동을 취하고 데이터셋을 쌓아나가야합니다.
+# 강화학습은 Training data set이라는게 따로 없습니다. Agent가 행동을 취하고 데이터셋을 쌓아나가야합니다.
 # 그 데이터셋을 쌓기 위한 버퍼
 class ReplayBuffer():
     def __init__(self):
@@ -60,7 +60,7 @@ class ReplayBuffer():
         self.buffer.append(transition)
     
     # 샘플 함수를 만드는 이유는 버퍼에 쌓인 데이터셋에서 랜덤으로 학습을 시키기 위함입니다.
-    # 그냥 연속해서 쌓인 n개의 데이터셋을 그대로 사용하면 데이터간의 상관관계가 너무 크기 때문에 학슴이 잘 안됩니다.
+    # 그냥 연속해서 쌓인 n개의 데이터셋을 그대로 사용하면 데이터간의 상관관계가 너무 크기 때문에 학습이 잘 안됩니다.
     def sample(self, n):
         mini_batch = random.sample(self.buffer, n)
         s_lst, a_lst, r_lst, s_prime_lst, done_mask_lst = [], [], [], [], []
