@@ -57,13 +57,16 @@ toc_sticky: true
 
 
 ### GARP
-1. IP 주소 충돌 감지
+1. IP 주소 충돌 감지  
 자신의 IP 주소를 타겟으로 하여 ARP 요청을 보낸다. 만약 다른 호스트가 이에 대한 응답이 있으면 이미 해당 IP 주소를 사용하는 호스트가 존재함을 뜻한다.
-2. ARP 테이블 갱신
+2. ARP 테이블 갱신  
 누군가가 GARP 패킷을 보내면, 이를 수신한 모든 호스트/라우터는 GARP 패킷의 Sender MAC과 IP Address로 자신의 ARP 테이블을 갱신한다.
-3. VRRP/HSRP
+3. VRRP/HSRP  
 위 프로토콜에서 사용한다고 하는데 나중에 자세히 공부하겠습니다.
 
 ## Physical Layer
 * Frame을 전기적인 신호로 변환하여 전달하는 기능
 * 매체(Media)에 따라 구성요소, 가능 B/W, 제약사항 등에 대한 숙지 필요
+
+## 생각
+ARP가 Network Layer랑 Data Link Layer에서 혼용되는 것 같은데 뭐가 정확한지 궁금합니다. 구글링을 해도 혼용해서 사용되고 있는 것 같습니다.
