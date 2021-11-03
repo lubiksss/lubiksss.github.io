@@ -1,5 +1,5 @@
 ---
-last_modified_at : 2021-10-24
+last_modified_at : 2021-11-03
 layout : single
 title:  "Algorithm 소팅"
 categories: Algorithm
@@ -9,8 +9,10 @@ toc: true
 toc_sticky: true
 ---
 ## 서론
+기본적으로 소팅의 원리와 동작은 이해했고 구현에 대한 부분만 연습할 겸 적어봤습니다.
 ### 참조
 <!-- <a target = '_blank' href=''></a>   -->
+
 
 ## 요약
 <table width = '100%'>
@@ -156,86 +158,73 @@ def shell_sort(nlist):
 ```
 ## 병합 정렬 (Merge)
 ```python
-def merge(nlist, left, mid, right):
-    sorted = [0]*len(nlist)
-    lstart = left
-    lend = mid
-    rstart = mid+1
-    rend = right
-    idx = left
-
-    # 분할된 애들을 앞에서 부터 비교하면서 작은것먼저 sorted에 넣음
-    while lstart <= lend and rstart <= rend:
-        if nlist[lstart] <= nlist[rstart]:
-            sorted[idx] = nlist[lstart]
-            lstart += 1
-            idx += 1
-        else:
-            sorted[idx] = nlist[rstart]
-            rstart += 1
-            idx += 1
-
-    # 다넣었는데 왼쪽이 남았다? 그대로 넣는다.
-    if lstart <= lend:
-        for i in range(lstart, lend+1):
-            sorted[idx] = nlist[i]
-            idx += 1
-    # 다넣었는데 오른쪽이 남았다? 그대로 넣는다.
-    if rstart <= rend:
-        for i in range(rstart, rend+1):
-            sorted[idx] = nlist[i]
-            idx += 1
-
-    for i in range(left, right+1):
-        nlist[i] = sorted[i]
-
-
 def merge_sort(nlist, left, right):
-    # 분할정복방법이니 탈출 조건
-    # 한개만 남게되면 아무것도 안하고 merge하면됨.
+    # left,right 포함
+    # 분할정복을 사용하기 때문에 end조건
     if left == right:
         return
+    mid = (left+right)//2
+    merge_sort(nlist, left, mid)
+    merge_sort(nlist, mid+1, right)
 
-    # 결국에 쪼개놓고 머지를 하면서 올라오는것
-    # 아랫단계에서부터 nlist의 값을 고치면서 올라옴.
-    if left < right:
-        mid = (left+right)//2
-        merge_sort(nlist, left, mid)
-        merge_sort(nlist, mid+1, right)
-        merge(nlist, left, mid, right)
+    sorted = [0]*len(nlist)
+    idx = left
+    ls = left
+    le = mid
+    rs = mid+1
+    re = right
+
+    # 왼쪽 파트와 오른쪽 파트를 작은 거부터 순서대로 넣음
+    while ls <= le and rs <= re:
+        if nlist[ls] <= nlist[rs]:
+            sorted[idx] = nlist[ls]
+            ls += 1
+        else:
+            sorted[idx] = nlist[rs]
+            rs += 1
+        idx += 1
+
+    # 한쪽 파트가 다넣어졌을때 남은 파트를 넣는 부분
+    if ls <= le:
+        for i in range(ls, le+1):
+            sorted[idx] = nlist[i]
+            idx += 1
+    if rs <= re:
+        for i in range(rs, re+1):
+            sorted[idx] = nlist[i]
+            idx += 1
+    for i in range(left, right+1):
+        nlist[i] = sorted[i]
 
     return nlist
 ```
 ## 퀵 정렬 (Quick)
 ```python
 def quick_sort(nlist, left, right):
-    # 분할정복방법이니 탈출조건
-    # 원소가 한개만 남으면 아무것도 안하면됨
+    # left,right 포함
+    # 분할정복을 사용하기 때문에 end조건
     if left >= right:
         return
 
-    # 피벗은 첫번째 원소 (랜덤으로 해도됨)
-    pivot = left
-    lstart = left
-    rstart = right
-    while(lstart <= rstart):
-        # 왼쪽부터 피벗보다 큰수를 찾음
-        while lstart <= right and nlist[lstart] <= nlist[pivot]:
-            lstart += 1
-        # 오른쪽부터 피벗보다 작은수를 찾음
-        while rstart > left and nlist[rstart] >= nlist[pivot]:
-            rstart -= 1
-        # 만약에 엇갈렸다면 피벗과 작은데이터와 교체한다
-        # 결국 엇갈리는 부분이 최상위 while문이 끝나는 부분임.
-        # pivot의 위치는 rstart가 됨
-        if lstart > rstart:
-            swap(pivot, rstart)
-        # 그렇지 않다면 두개를 바꾼다.
+    pvt = left
+    ls = left
+    rs = right
+    # 피벗을 기준으로 왼쪽에는 작은숫자 오른쪽에는 큰숫자를 남김
+    while ls <= rs:
+        while ls <= right and nlist[ls] <= nlist[pvt]:
+            ls += 1
+        while rs > left and nlist[rs] >= nlist[pvt]:
+            rs -= 1
+        # 왼쪽포인터와 오른쪽포인터가 교차하지 않았으면 바꿀게 있단 뜻
+        if ls <= rs:
+            swap(nlist, ls, rs)
+        # 교차했으면 이제 왼쪽엔 작은것만 남고 오른쪽엔 작은것만 남았단 뜻
+        # 피벗과 rs를 바꿔준다.
         else:
-            swap(lstart, rstart)
-    # 그리고 피벗 좌우로 분할정복을 해준다.
-    quick_sort(nlist, left, rstart-1)
-    quick_sort(nlist, rstart+1, right)
+            swap(nlist, pvt, rs)
+    quick_sort(nlist, left, rs-1)
+    quick_sort(nlist, rs+1, right)
+
     return nlist
 ```
 <!-- ## 힙 정렬 (Heap) -->
