@@ -65,7 +65,7 @@ toc_sticky: true
 
 ## 캡술화(Encapsulation)
 1. Application에서 data가 만들어진다.
-2. Transport 계층으로 data가 내려오고 거기에 sport와 헤더로 붙여서 Segment가 만들어진다. (TCP의 경우는 이런 걸 하기 전에 연결을 확보하는데 그것은 TCP 프로토콜을 공부하면서 다시 적겠습니다.)
+2. Transport 계층으로 data가 내려오고 거기에 sport와 transport 정보를 헤더로 붙여서 Segment가 만들어진다. (TCP의 경우는 이런 걸 하기 전에 연결을 확보하는데 그것은 TCP 프로토콜을 공부하면서 다시 적겠습니다.)
 3. Network 계층으로 Segment가 내려오고 거기에 sIP와 dIP를 붙여서 Packet을 만든다.
 4. 이때 그럼 dIP를 어떻게 구할 것이냐는 DNS를 통해서 구한다.
 5. 마지막으로 Data Link 계층으로 Packet이 내려오고 sMAC과 dMAC을 붙여서 Frame을 만든다.
