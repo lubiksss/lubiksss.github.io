@@ -62,7 +62,7 @@ print(max(visited))
 ```
 
 
-### Union Find
+## Union Find
 연결된 요소를 찾는다는 것 자체가 Union Find 느낌이 와서 적용해봤는데 잘 풀리는 것 같습니다. 주의할 점은 지금까지 Union Find에서 parent를 구할 때 parent 리스트는 같은 그룹이라고 같은 숫자가 쓰여있는 것이 아니기 때문에 문제에 맞게 바꾸기 위해서 한 번 더 최신화를 해주었습니다.
 ```python
 import sys
