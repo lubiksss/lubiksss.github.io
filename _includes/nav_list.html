@@ -12,12 +12,14 @@
 {% endif %}
 {% endfor %}
 
+<div style="padding-left: 15px">
 {% for i in (1..categories_max) reversed %}
 {% for category in site.categories reversed%}
 {% if category[1].size == i %}
-<div class="author__content" style='margin:0.2em 0'>
-  <a href="/categories/{{category[0]}}">{{category[0]}}({{category[1].size}})</a>
-</div>
+<span style='margin:0.2em 0'>
+  <a href="/categories/{{category[0]}}" style="color: #aebac7;">{{category[0]}}({{category[1].size}})</a>
+</span>
 {% endif %}
 {% endfor %}
 {% endfor %}
+</div>
