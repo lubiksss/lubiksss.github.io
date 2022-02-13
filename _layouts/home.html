@@ -6,8 +6,7 @@ layout: archive
 <!--
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Home" }}</h3>
 -->
-<h1 style = margin-top:0;>Recent Posts</h1>
-<hr style="border: solid; color:gray;">
+<h1 style = "margin-top:0; border-bottom: 6px solid #454c53; padding-bottom: 0.5em;">Recent Posts</h1>
 
 {% if paginator %}
   {% assign posts = paginator.posts %}
@@ -22,7 +21,6 @@ layout: archive
 <div class="entries-{{ entries_layout }}">
   {% for post in sorted_posts %}
     {% include archive-single__category_tag.html type=entries_layout %}
-<!--    <hr style = 'margin: 0.15em 0;'>-->
   {% endfor %}
 
 </div>
