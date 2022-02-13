@@ -3,26 +3,35 @@ layout: archive
 ---
 {{ content }}
 
+
 <!--
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Home" }}</h3>
 -->
-<h1 style = "margin-top:0; border-bottom: 6px solid #454c53; padding-bottom: 0.5em;">Recent Posts</h1>
+<!--right sidebar-->
+<aside class="sidebar__right sticky">
+    <img alt="" class=img_large src="/assets/images/test1.jpeg" style="margin-bottom: 1em; width: 100%">
+    <img alt="" class=img_large src="/assets/images/test2.gif" style="margin-bottom: 1em; width: 100%">
+    <img alt="" class=img_small src="/assets/images/test3.gif" style="margin-bottom: 1em; width: 100%">
+</aside>
 
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
+<div style="float: left; width: 100%">
+    <h1 style="margin-top:0; border-bottom: 6px solid #454c53; padding-bottom: 0.5em;">Recent Posts</h1>
 
-{% assign entries_layout = page.entries_layout | default: 'list' %}
+    {% if paginator %}
+    {% assign posts = paginator.posts %}
+    {% else %}
+    {% assign posts = site.posts %}
+    {% endif %}
 
-{% assign sorted_posts = posts | sort:"last_modified_at" | reverse%}
+    {% assign entries_layout = page.entries_layout | default: 'list' %}
 
-<div class="entries-{{ entries_layout }}">
-  {% for post in sorted_posts %}
-    {% include archive-single__category_tag.html type=entries_layout %}
-  {% endfor %}
+    {% assign sorted_posts = posts | sort:"last_modified_at" | reverse%}
 
+    <div class="entries-{{ entries_layout }}">
+        {% for post in sorted_posts %}
+        {% include archive-single__category_tag.html type=entries_layout %}
+        {% endfor %}
+
+    </div>
+    {% include paginator.html %}
 </div>
-
-{% include paginator.html %}
