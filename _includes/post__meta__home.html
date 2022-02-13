@@ -3,17 +3,17 @@
 
 <!-- 카테고리, 태그 추가하기위해 패스 추가-->
 {% case site.category_archive.type %}
-  {% when "liquid" %}
-    {% assign path_type = "#" %}
-  {% when "jekyll-archives" %}
-    {% assign path_type = nil %}
+{% when "liquid" %}
+{% assign path_type = "#" %}
+{% when "jekyll-archives" %}
+{% assign path_type = nil %}
 {% endcase %}
 
-  <p class="page__meta">
+<p class="page__meta">
 
     <!-- 업데이트 날짜랑 포스트 날짜랑다르면 업데이트 날짜를 표시하게함.-->
     <span class="page__meta-date">
-      {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+      {% assign date_format = site.date_format | default: "%b %d, %Y" %}
       {% assign date = document.date %}
 
       {% capture modified %}
@@ -25,15 +25,17 @@
       {% endcapture %}
 
       {% if modified !=  posted %}
-        <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i>Updated by
-        <time datetime="{{ post.last_modified_at | date: "%Y-%m-%d" }}">{{ post.last_modified_at | date: date_format }}</time>
-      {% else %}
+        <i aria-hidden="true" class="fas fa-fw fa-calendar-alt"></i>Updated by
+        <time %Y-%m-%d
+              datetime="{{ post.last_modified_at | date: "" }}">{{ post.last_modified_at | date: date_format }}</time>
+        {% else %}
         <!-- 포스팅 날짜 -->
         {% if document.show_date and document.date %}
           {% assign date = document.date %}
           <span class="page__meta-date">
-            <i class="far {% if include.type == 'grid' and document.read_time and document.show_date %}fa-fw {% endif %}fa-calendar-alt" aria-hidden="true"></i>
-            {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+            <i aria-hidden="true"
+               class="far {% if include.type == 'grid' and document.read_time and document.show_date %}fa-fw {% endif %}fa-calendar-alt"></i>
+            {% assign date_format = site.date_format | default: "%b %d, %Y" %}
             <time datetime="{{ date | date_to_xmlschema }}">Posted by {{ date | date: date_format }}</time>
           </span>
         {% endif %}
@@ -42,24 +44,26 @@
 
     <!-- 카테고리 추가-->
     <span>
-      <i class="fas fa-fw fa-folder-open" aria-hidden="true"></i>
+      <i aria-hidden="true" class="fas fa-fw fa-folder-open"></i>
       <span itemprop="keywords">
       {% for category_word in post.categories %}
-        <a href="{{ category_word | slugify | prepend: path_type | prepend: site.category_archive.path | relative_url }}" class="page__taxonomy-item" rel="tag">{{ category_word }}</a>
+        <a class="page__taxonomy-item"
+           href="{{ category_word | slugify | prepend: path_type | prepend: site.category_archive.path | relative_url }}" rel="tag">{{ category_word }}</a>
       {% endfor %}
       </span>
     </span>
 
     <!--태그추가-->
     <span>
-      <i class="fas fa-fw fa-tags" aria-hidden="true"></i>
+      <i aria-hidden="true" class="fas fa-fw fa-tags"></i>
       <span itemprop="keywords">
       {% for tag_word in post.tags %}
-        <a href="{{ tag_word | slugify | prepend: path_type | prepend: site.tag_archive.path | relative_url }}" class="page__taxonomy-item" rel="tag">{{ tag_word }}</a>
+        <a class="page__taxonomy-item"
+           href="{{ tag_word | slugify | prepend: path_type | prepend: site.tag_archive.path | relative_url }}" rel="tag">{{ tag_word }}</a>
       {% endfor %}
       </span>
     </span>
 
 
-  </p>
+</p>
 {% endif %}

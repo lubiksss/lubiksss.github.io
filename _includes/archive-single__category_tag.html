@@ -21,7 +21,7 @@
 {% endcase %}
 
 <!--날짜관련-->
-{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+{% assign date_format = site.date_format | default: "%b %d, %Y" %}
 {% assign date = document.date %}
 
 <div class="{{ include.type | default: 'list' }}__item">
