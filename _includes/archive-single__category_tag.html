@@ -67,7 +67,7 @@
                   {% assign tag_word = post.tags[0] %}
                   <a class="page__taxonomy-item"
                      href="{{ tag_word | slugify | prepend: path_type | prepend: site.tag_archive.path | relative_url }}"
-                     rel="tag" style="margin-bottom:0; margin-top:0">{{ tag_word }}</a>
+                     rel="tag" style="margin-bottom:0; margin-top:0; background-color: #2c333b;">{{ tag_word }}</a>
                 </span>
             </span>
         </span>

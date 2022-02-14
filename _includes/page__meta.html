@@ -46,7 +46,8 @@
       <span itemprop="keywords">
       Categories:
       {% for category_word in page.categories %}
-        <a href="{{ category_word | slugify | prepend: path_type | prepend: site.category_archive.path | relative_url }}" class="page__taxonomy-item-category" rel="tag">{{ category_word }}</a>
+        <a href="{{ category_word | slugify | prepend: path_type | prepend: site.category_archive.path | relative_url }}"
+           class="page__taxonomy-item-category" rel="tag" style="background-color: #2c333b;">{{ category_word }}</a>
       {% endfor %}
       </span>
     </span>
@@ -57,7 +58,8 @@
       <span itemprop="keywords">
         Tags:
       {% for tag_word in page.tags %}
-        <a href="{{ tag_word | slugify | prepend: path_type | prepend: site.tag_archive.path | relative_url }}" class="page__taxonomy-item" rel="tag">{{ tag_word }}</a>
+        <a href="{{ tag_word | slugify | prepend: path_type | prepend: site.tag_archive.path | relative_url }}"
+           class="page__taxonomy-item" rel="tag" style="background-color: #2c333b;">{{ tag_word }}</a>
       {% endfor %}
       </span>
     </span>
