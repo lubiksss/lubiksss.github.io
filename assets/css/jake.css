@@ -1,19 +1,35 @@
 @media (min-width: 1024px) {
     .img_large {
         display: block;
+        margin-bottom: 1em;
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid #34393e;
     }
 
     .img_small {
         display: none;
+        margin-bottom: 1em;
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid #34393e;
     }
 }
 
 @media (max-width: 1023px) {
     .img_large {
         display: none;
+        margin-bottom: 1em;
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid #34393e;
     }
 
     .img_small {
         display: block;
+        margin-bottom: 1em;
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid #34393e;
     }
 }
