@@ -45,7 +45,7 @@ author_profile: true
     {% include group-by-array collection=site.posts field="categories" %}
     {% for category in group_names %}
     {% assign posts = group_items[forloop.index0] %}
-    <h2 class="archive__subtitle" id="{{ category | slugify }}">{{ category }}</h2>
+    <h2 class="archive__subtitle" id="{{ category | slugify }}" style="border-bottom: 6px solid #454c53;">{{ category }}</h2>
     {% assign sorted_posts = posts | sort:"last_modified_at" | reverse%}
     {% for post in sorted_posts %}
     {% include archive-single__category_tag.html %}
