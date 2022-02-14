@@ -26,7 +26,7 @@
 
 <div class="{{ include.type | default: 'list' }}__item">
     <article class="archive__item"
-             style="border-bottom: 1px solid #454c53; padding-top: 0.15em; display: grid; grid-template-columns: 1fr 1fr">
+             style="border-bottom: 1px solid #454c53; padding-top: 0.15em; display: grid; grid-template-columns: 2fr 3fr">
 
         <span class="archive__item-title" style="margin-bottom: 0px; margin-top: 0px">
           <strong>
@@ -34,7 +34,7 @@
           </strong>
         </span>
 
-        <span class="page__meta" style="display: grid; grid-template-columns: 1fr 1fr">
+        <span class="page__meta" style="display: grid; grid-template-columns: 1fr 1fr 1fr">
 
             <!--날짜 추가-->
             <span style="padding-top: 5px">
@@ -56,16 +56,20 @@
             </span>
 
             <!-- 태그추가-->
-            <!--            <span>-->
-            <!--                <i aria-hidden="true" class="fas fa-fw fa-tags"></i>-->
-            <!--                <span itemprop="keywords">-->
-            <!--                  {% for tag_word in post.tags %}-->
-            <!--                  <a class="page__taxonomy-item"-->
-            <!--                     href="{{ tag_word | slugify | prepend: path_type | prepend: site.tag_archive.path | relative_url }}"-->
-            <!--                     rel="tag" style="margin-bottom:0; margin-top:0">{{ tag_word }}</a>-->
-            <!--                  {% endfor %}-->
-            <!--                </span>-->
-            <!--            </span>-->
+            <span>
+                <i aria-hidden="true" class="fas fa-fw fa-tags"></i>
+                <span itemprop="keywords">
+<!--                  {% for tag_word in post.tags %}-->
+                    <!--                  <a class="page__taxonomy-item"-->
+                    <!--                     href="{{ tag_word | slugify | prepend: path_type | prepend: site.tag_archive.path | relative_url }}"-->
+                    <!--                     rel="tag" style="margin-bottom:0; margin-top:0">{{ tag_word }}</a>-->
+                    <!--                  {% endfor %}-->
+                  {% assign tag_word = post.tags[0] %}
+                  <a class="page__taxonomy-item"
+                     href="{{ tag_word | slugify | prepend: path_type | prepend: site.tag_archive.path | relative_url }}"
+                     rel="tag" style="margin-bottom:0; margin-top:0">{{ tag_word }}</a>
+                </span>
+            </span>
         </span>
     </article>
 </div>
