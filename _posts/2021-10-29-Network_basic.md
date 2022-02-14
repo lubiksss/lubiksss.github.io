@@ -3,7 +3,7 @@ last_modified_at : 2021-10-29
 layout : single
 title: "Network basic"
 categories: Network
-tags : [Network, basic]
+tags : [study, basic]
 
 toc: true
 toc_sticky: true

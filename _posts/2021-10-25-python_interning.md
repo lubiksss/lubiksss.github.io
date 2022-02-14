@@ -3,7 +3,7 @@ last_modified_at : 2021-10-25
 layout : single
 title:  "python Interning"
 categories: python
-tags : [python, Interning]
+tags : [Interning]
 
 toc: true
 toc_sticky: true

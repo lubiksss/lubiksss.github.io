@@ -3,7 +3,7 @@ last_modified_at : 2021-09-05
 layout : single
 title:  "Github 많이 쓰는 명령어"
 categories: github
-tags : [명령어]
+tags : [command]
 
 toc: true
 toc_sticky: true

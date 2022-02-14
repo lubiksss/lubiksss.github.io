@@ -3,7 +3,7 @@ last_modified_at : 2021-08-15
 layout : single
 title:  "백준 최단경로 알고리즘"
 categories: BOJ
-tags : [python, 최단경로, 알고리즘, shortpath]
+tags : [shortpath, python]
 
 toc: true
 toc_sticky: true
@@ -63,4 +63,3 @@ toc_sticky: true
 </table>
 
 ## 생각
-

@@ -1,9 +1,9 @@
 ---
 last_modified_at : 2021-10-29
 layout : single
-title:  "백준 재귀함수를 이용한 별 찍기"
+title:  "백준 2448번 별 찍기"
 categories: BOJ
-tags : [python, 재귀함수, 분할정복]
+tags : [2448번, python, 재귀함수, 분할정복]
 
 toc: true
 toc_sticky: true

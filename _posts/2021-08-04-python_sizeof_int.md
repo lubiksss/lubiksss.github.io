@@ -3,7 +3,7 @@ last_modified_at : 2021-08-04
 layout : single
 title:  "파이썬 int형 크기"
 categories: python
-tags : [int 크기, 정수형 크기, 28바이트]
+tags : [int, 정수형 크기, 28바이트]
 
 toc: true
 toc_sticky: true

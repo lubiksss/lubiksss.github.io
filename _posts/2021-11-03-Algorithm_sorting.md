@@ -2,8 +2,8 @@
 last_modified_at : 2021-11-03
 layout : single
 title:  "Algorithm 소팅"
-categories: Algorithm
-tags : [Algorithm, 소팅, sorting]
+categories: Alg
+tags : [sorting, 소팅]
 
 toc: true
 toc_sticky: true

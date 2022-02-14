@@ -3,7 +3,7 @@ last_modified_at : 2021-08-21
 layout : single
 title:  "백준 최단 거리 추적"
 categories: BOJ
-tags : [python, short path, tracking]
+tags : [short path, python, tracking]
 
 toc: true
 toc_sticky: true

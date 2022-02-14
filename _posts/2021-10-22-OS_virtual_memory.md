@@ -3,7 +3,7 @@ last_modified_at : 2021-10-22
 layout : single
 title:  "OS 가상메모리"
 categories: OS
-tags : [OS, virtual memory]
+tags : [virtual memory]
 
 toc: true
 toc_sticky: true

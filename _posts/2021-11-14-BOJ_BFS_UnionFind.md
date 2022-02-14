@@ -1,9 +1,9 @@
 ---
 last_modified_at : 2021-11-14
 layout : single
-title:  "백준 연결 요소의 개수"
+title:  "백준 11724번 연결 요소의 개수"
 categories: BOJ
-tags : [python, BFS, union find]
+tags : [11724번, python, BFS, union find]
 
 toc: true
 toc_sticky: true

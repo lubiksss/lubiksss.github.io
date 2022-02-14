@@ -3,7 +3,7 @@ last_modified_at : 2021-07-24
 layout : single
 title:  "백준 이분 탐색"
 categories: BOJ
-tags : [python, 이분 탐색, binary search]
+tags : [이분 탐색,python,  binary search]
 
 toc: true
 toc_sticky: true
@@ -120,5 +120,3 @@ def upper_bound(start, end, target):
 # upper_bound는 4를 리턴
 ```
 위 코드에서 함수의 입력 end값은 제가 짠 코드와 다르게 인덱스의 end보다 1 큰 값입니다.(end = len(data))
-
-

@@ -3,7 +3,7 @@ last_modified_at : 2021-10-29
 layout : single
 title: "Network protocol"
 categories: Network
-tags : [Network, protocol]
+tags : [study, protocol]
 
 toc: true
 toc_sticky: true
@@ -88,4 +88,3 @@ toc_sticky: true
 * Framce의 dMAC정보만 계속 바뀌면서 네트워킹이 된다. 학교 수업을 들으면서도 너무나도 궁금하고 교수님도 알려주지 않았던\.\.\.드디어 알았습니다\.\.
 
 <img src = 'https://user-images.githubusercontent.com/67966414/139431929-4a48e293-b66c-4ce4-a3e8-996f804761b5.PNG' alt = '네트워킹과정' style="margin-left: auto; margin-right: auto; display: block;">
-

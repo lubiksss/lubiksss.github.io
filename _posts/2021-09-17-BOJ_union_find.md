@@ -3,7 +3,7 @@ last_modified_at : 2021-09-17
 layout : single
 title:  "백준 유니온 파인드"
 categories: BOJ
-tags : [python, union find, tree]
+tags : [union find, python, tree]
 
 toc: true
 toc_sticky: true

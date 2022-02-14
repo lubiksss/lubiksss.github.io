@@ -3,7 +3,7 @@ last_modified_at : 2021-08-06
 layout : single
 title:  "머신러닝 개요"
 categories: ML
-tags : [머신러닝, machine learning]
+tags : [study, machine learning]
 
 toc: true
 toc_sticky: true

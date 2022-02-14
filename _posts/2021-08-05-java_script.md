@@ -3,7 +3,7 @@ last_modified_at : 2021-08-05
 layout: single
 title:  "Java script test"
 categories: blog
-tags: [java script, JS]
+tags: [JS, java script]
 
 toc: true
 toc_sticky: true

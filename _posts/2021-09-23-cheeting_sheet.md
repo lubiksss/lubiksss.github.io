@@ -3,7 +3,7 @@ last_modified_at : 2021-09-23
 layout: single
 title:  "Cheeting Sheet"
 categories: blog
-tags: [Cheeting Sheet, Summary]
+tags: [Summary]
 
 toc: true
 toc_sticky: true

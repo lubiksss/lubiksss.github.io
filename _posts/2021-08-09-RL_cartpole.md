@@ -3,7 +3,7 @@ last_modified_at : 2021-08-09
 layout : single
 title:  "DQN을 통한 cartpole게임 학습"
 categories: ML
-tags : [강화학습, DQN, CartPole]
+tags : [RL, 강화학습, DQN, CartPole]
 
 toc: true
 toc_sticky: true

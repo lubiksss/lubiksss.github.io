@@ -3,7 +3,7 @@ last_modified_at : 2021-10-30
 layout : single
 title: "Network layer"
 categories: Network
-tags : [Network, layer]
+tags : [study, layer]
 
 toc: true
 toc_sticky: true
