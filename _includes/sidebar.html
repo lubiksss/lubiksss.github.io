@@ -23,10 +23,16 @@
   style = 'width: auto;'/> -->
 
   <hr>
+  {% assign sum = site.posts | size %}
+  <div class="author__content" style='margin:0.2em 0; font-size: 0.8em'>
+    <a href='/blog/cheeting_sheet/'>📂&nbsp 전체 글 수 {{sum}}개</a>
+  </div>
+
+  <hr>
   {% include nav_list.html %}
   <hr>
   <div class="author__content" style='margin:0.2em 0'>
-    <a href='https://lubiksss.github.io/blog/cheeting_sheet/'>Cheeting
+    <a href='/blog/cheeting_sheet/'>Cheeting
       Sheet</a>
   </div>
   <hr>
